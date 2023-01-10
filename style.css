@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Sofia Sans', sans-serif;
+    background-color: var(--bg-clr);
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* CSS variable  */
+:root {
+    --main-clr: #3a7ca5;
+    --secondary-clr: #74b3ce;
+    --bg-clr: #eee;
+}
+
+.container {
+    width: 1250px;
+    margin: 0 auto;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0px;
+}
+header .container .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header .container .logo img {
+    width: 45px;
+}
+header .container .logo h1 {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--main-clr);
+}
+header .container nav ul {
+    display: flex;
+    gap: 70px;
+}
+header .container nav ul li {
+    list-style: none;
+    text-transform: capitalize;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+header .container nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    padding: 12px 20px;
+}
+header .container nav ul li.active {
+    background-color: #7c64f42a;
+}
+header .container nav ul li.active a{
+    color: var(--main-clr);
+    font-weight: 700;
+}
+header .container nav ul li:hover {
+    background-color: #7c64f42a;
+}
+header .container .btn {
+    background-color: var(--main-clr);
+    color: white;
+    border-radius: 10px;
+}
+header .container .btn a {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    padding: 15px 25px;
+}
+
+/* main starts here  */
+main {
+    padding: 80px 0px;
+}
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .container .description h1 {
+    font-size: 40px;
+}
+main .container .description h1 span {
+    color: var(--main-clr);
+}
+main .container .description p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+
+/* section about-me starts here */
+section.about-me {
+    padding: 80px 0px;
+}
+section .container{
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+section .title {
+    background-color: var(--secondary-clr);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 8px 30px;
+}
+section p {
+    font-size: 25px;
+    padding: 25px 30px;
+    line-height: 2;
+}
+
+ /* section links start here  */
+ section.links {
+    padding-bottom: 80px;
+ }
+section.links .links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 25px;
+}
+section.links .link {
+    display: flex;
+    border: 1px solid #eee;
+}
+section.links .link img {
+    width: 150px;
+    align-self: center;
+}
+section.links .link p {
+    font-size: 16px;
+    align-self: center;
+}
+section.links .link .btn {
+    background-color: var(--secondary-clr);
+}
+section.links .link .btn a {
+    display: flex;
+    height: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    align-items: center;
+    padding-inline: 15px;
+}
+/* section contacts start here  */
+section.contact {
+    padding-bottom: 80px;
+}
+section.contact img {
+    margin-top: 25px;
+    border: 10px solid var(--main-clr);
+    position: relative;
+    width: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section .contact-wrapper  {
+    padding: 25px;
+}
+section .contact-wrapper {
+    margin-top: 25px;
+}
+section .contact-wrapper .contact-title {
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+}
+section .contact-wrapper .info {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+section .contact-wrapper .info span {
+    font-size: 19px;
+    font-weight: 300;
+}
+section .contact-wrapper .info a {
+    font-size: 19px;
+    font-weight: 300;
+    border: 1px solid var(--main-clr);
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s;
+}
+section .contact-wrapper .info a:hover {
+    background-color: var(--main-clr);
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--main-clr);
+    padding: 20px 0px;
+    color: white;
+}
